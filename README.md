@@ -58,7 +58,7 @@
 <body>
   <div class="header">
     <object data="https://brand.nixos.org/logos/nixos-logo-default-gradient-black-regular-horizontal-recommended.svg" type="image/svg+xml" class="logo">
-      NixOS Logo
+      <img src="https://brand.nixos.org/logos/nixos-logo-default-gradient-black-regular-horizontal-recommended.png" alt="NixOS Logo" class="logo">
     </object>
     <h1>NixOS Configuration</h1>
     <p>A <span class="highlight">reproducible</span>, <span class="highlight">declarative</span>, and <span class="highlight">customizable</span> NixOS setup for gaming, development, and daily use.</p>
