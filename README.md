@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>NixOS Configuration</title>
+  <title>NixOS Configuration by Nabil K Sabu</title>
   <style>
     body {
       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -18,9 +18,16 @@
       text-align: center;
       margin-bottom: 30px;
     }
+    .logo {
+      width: 300px;
+      height: auto;
+      margin-bottom: 20px;
+    }
     .divider {
       text-align: center;
       margin: 30px 0;
+      font-size: 24px;
+      color: #646cff;
     }
     .footer {
       text-align: center;
@@ -28,8 +35,12 @@
       font-size: 14px;
       color: #666;
     }
-    h1 {
-      color: #4a6baf;
+    h1, h2 {
+      color: #4a4a4a;
+    }
+    .highlight {
+      color: #646cff;
+      font-weight: bold;
     }
     pre {
       background-color: #f0f0f0;
@@ -37,21 +48,26 @@
       border-radius: 5px;
       overflow-x: auto;
     }
-    .highlight {
-      color: #8a2be2;
-      font-weight: bold;
+    .snowflake {
+      color: #646cff;
+      font-size: 20px;
+      margin: 0 10px;
     }
   </style>
 </head>
 <body>
   <div class="header">
-    <img src="https://mistralaiblackforestprod.blob.core.windows.net/images/blackforest/1451/2737/-51d/b-4ca8-8a10-4a9ef1edb584/image.jpg?se=2026-02-10T20%3A16%3A33Z&sp=r&sv=2025-01-05&sr=b&sig=rthYqQYKI948C1GCxuMIj80b%2BtyTk1P8/hBghlSXYgE%3D" alt="NixOS Configuration Header" width="400" />
+    <object data="https://brand.nixos.org/logos/nixos-logo-default-gradient-black-regular-horizontal-recommended.svg" type="image/svg+xml" class="logo">
+      NixOS Logo
+    </object>
     <h1>NixOS Configuration</h1>
     <p>A <span class="highlight">reproducible</span>, <span class="highlight">declarative</span>, and <span class="highlight">customizable</span> NixOS setup for gaming, development, and daily use.</p>
   </div>
 
   <div class="divider">
-    <img src="https://mistralaiblackforestprod.blob.core.windows.net/images/blackforest/b6e0/19bb/-763/6-4bfe-86e7-e107866f75bf/image.jpg?se=2026-02-10T20%3A16%3A34Z&sp=r&sv=2025-01-05&sr=b&sig=r7QMD5E2qfmBfNdTSVYkbZQYMkemoNkLh/POgTNojOg%3D" alt="Divider" width="300" />
+    <span class="snowflake">❄️</span>
+    <span class="snowflake">❄️</span>
+    <span class="snowflake">❄️</span>
   </div>
 
   <h2>📜 Overview</h2>
@@ -107,11 +123,10 @@
     <li>Clone this repository:</li>
     <pre>git clone https://github.com/nabilksabu/nix-cofig.git</pre>
     <li>Apply the configuration:</li>
-    <pre>sudo nixos-rebuild switch --flake .#your-hostname</pre>
+    <pre>sudo nixos-rebuild switch</pre>
   </ol>
 
   <div class="footer">
-    <img src="https://mistralaiblackforestprod.blob.core.windows.net/images/blackforest/711b/c112/-9f5/f-4424-aee2-5da3e259a4bf/image.jpg?se=2026-02-10T20%3A16%3A34Z&sp=r&sv=2025-01-05&sr=b&sig=hu59oE3L33%2BB9CVRaEHVAIQPNTbhRYU3ewr0%2BuppCB4%3D" alt="Powered by NixOS" width="200" />
     <p>Powered by <a href="https://nixos.org/">NixOS</a> | Maintained by <a href="https://github.com/nabilksabu">Nabil K Sabu</a></p>
   </div>
 </body>
