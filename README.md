@@ -1,32 +1,38 @@
-# NixOS Configuration
+# ❄️ NixOS Configuration by Nabil K Sabu
 
-![NixOS Logo](https://brand.nixos.org/logos/nixos-logo-default-gradient-white-regular-horizontal-recommended.svg#gh-light-mode-only)
-![NixOS Logo](https://brand.nixos.org/logos/nixos-logo-default-gradient-black-regular-horizontal-recommended.svg#gh-dark-mode-only)
+<div align="center">
+  <img src="https://brand.nixos.org/logos/nixos-logo-default-gradient-white-regular-horizontal-recommended.svg#gh-light-mode-only" alt="NixOS Logo" width="400"/>
+  <img src="https://brand.nixos.org/logos/nixos-logo-default-gradient-black-regular-horizontal-recommended.svg#gh-dark-mode-only" alt="NixOS Logo" width="400"/>
+</div>
+
+---
 
 A **reproducible**, **declarative**, and **customizable** NixOS setup for gaming, development, and daily use.
 
 ---
 
-❄️ **Overview** ❄️
+## 📜 Overview
 
-This repository contains my personal [NixOS](https://nixos.org/) configuration. It is designed for a seamless experience with:
+This repository contains my **personal NixOS configuration**, designed for a seamless experience with:
 
-- **Gaming**: NVIDIA drivers, Steam, Proton, and GameMode.
-- **Development**: Git, GitHub CLI, Python, and VS Codium.
-- **Daily Use**: GNOME desktop, Firefox, and system utilities.
-
----
-
-### 🔧 Features
-
-- **NVIDIA GPU Support**: Optimized for hybrid graphics (AMD/NVIDIA).
-- **Steam Gaming**: ProtonUp-Qt, GameMode, and MangoHud for enhanced gaming.
-- **GNOME Desktop**: Customized and streamlined for productivity.
-- **System Utilities**: Fastfetch, Git, and GitHub CLI pre-installed.
+- **🎮 Gaming**: NVIDIA drivers, Steam, Proton, and GameMode.
+- **💻 Development**: Git, GitHub CLI, Python, and VS Codium.
+- **🌐 Daily Use**: GNOME desktop, Firefox, and system utilities.
 
 ---
 
-### 📋 Configuration
+## 🔧 Features
+
+| Feature                     | Description                                                                 |
+|-----------------------------|-----------------------------------------------------------------------------|
+| **NVIDIA GPU Support**      | Optimized for hybrid graphics (AMD/NVIDIA).                                  |
+| **Steam Gaming**            | ProtonUp-Qt, GameMode, and MangoHud for enhanced gaming.                     |
+| **GNOME Desktop**           | Customized and streamlined for productivity.                                |
+| **System Utilities**        | Fastfetch, Git, and GitHub CLI pre-installed.                               |
+
+---
+
+## 📋 Configuration
 
 Here’s a snippet of my `configuration.nix`:
 
