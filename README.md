@@ -1,6 +1,7 @@
 # NixOS Configuration
 
-![NixOS Logo](https://brand.nixos.org/logos/nixos-logo-default-gradient-black-regular-horizontal-recommended.svg)
+![NixOS Logo](https://brand.nixos.org/logos/nixos-logo-default-gradient-white-regular-horizontal-recommended.svg#gh-light-mode-only)
+![NixOS Logo](https://brand.nixos.org/logos/nixos-logo-default-gradient-black-regular-horizontal-recommended.svg#gh-dark-mode-only)
 
 A **reproducible**, **declarative**, and **customizable** NixOS setup for gaming, development, and daily use.
 
