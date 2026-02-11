@@ -14,6 +14,46 @@
       ./hardware-configuration.nix
     ];
 
+
+
+
+
+
+
+  # Define the mount point for your NTFS HDD
+  fileSystems."/mnt/HDD" = {
+    device = "/dev/disk/by-uuid/42B40D6CB40D642F";
+    fsType = "ntfs-3g";
+    options = [
+      "uid=1000"
+      "gid=1000"
+      "dmask=022"
+      "fmask=133"
+      "nofail"
+      "noatime"
+      "windows_names"
+    ];
+  };
+
+  # Enable udisks2 for automounting
+  services.udisks2.enable = true;
+
+  # Add udev rule for automounting external HDD
+  services.udev.extraRules =
+    let
+      udisksctl = "${pkgs.udisks}/bin/udisksctl";
+    in ''
+      ACTION=="add", SUBSYSTEM=="block", ENV{ID_FS_UUID}=="42B40D6CB40D642F", RUN+="${udisksctl} mount -b /dev/%k"
+      ACTION=="remove", SUBSYSTEM=="block", ENV{ID_FS_UUID}=="42B40D6CB40D642F", RUN+="${udisksctl} unmount -b /dev/%k"
+    '';
+
+
+
+
+
+
+
+
   # Bootloader.
   boot.loader.systemd-boot.enable = true;
   boot.loader.efi.canTouchEfiVariables = true;
@@ -30,6 +70,7 @@
 
   # Enable networking
   networking.networkmanager.enable = true;
+
 
 
 
@@ -194,6 +235,8 @@ environment.gnome.excludePackages = with pkgs; [
 	heroic
 	mangohud
 	protonup-ng
+	ntfs3g
+	udisks2
   ];
 
 
