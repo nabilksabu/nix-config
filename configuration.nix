@@ -17,6 +17,14 @@
 
 
 
+#enable flatpak support 
+services.flatpak.enable = true;
+xdg.portal.extraPortals = [ pkgs.xdg-desktop-portal-gtk ];
+
+
+
+
+
 
   # Define the mount point for your NTFS HDD
   fileSystems."/mnt/HDD" = {
