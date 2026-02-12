@@ -235,7 +235,7 @@ environment.gnome.excludePackages = with pkgs; [
 	protonup-ng
 	ntfs3g
 	udisks2
-	(pkgs.callPackage /home/nabil/Documents/Code/nix/nix-pkgs/vantage/vantage.nix {})
+(pkgs.callPackage (fetchTarball "https://github.com/nabilksabu/vantage-nix/archive/main.tar.gz") {})
   ];
 
 
