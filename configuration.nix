@@ -243,6 +243,8 @@ environment.gnome.excludePackages = with pkgs; [
 	protonup-ng
 	ntfs3g
 	udisks2
+	onlyoffice-desktopeditors
+
 (pkgs.callPackage (fetchTarball "https://github.com/nabilksabu/vantage-nix/archive/main.tar.gz") {})
   ];
 
