@@ -6,13 +6,12 @@
 
 
 
-
-
 {
   imports =
     [ # Include the results of the hardware scan.
       ./hardware-configuration.nix
     ];
+
 
 
 
@@ -244,7 +243,8 @@ environment.gnome.excludePackages = with pkgs; [
 	ntfs3g
 	udisks2
 	onlyoffice-desktopeditors
-
+	discord
+	htop
 (pkgs.callPackage (fetchTarball "https://github.com/nabilksabu/vantage-nix/archive/main.tar.gz") {})
   ];
 
