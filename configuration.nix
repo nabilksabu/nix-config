@@ -13,14 +13,17 @@
     ];
 
 
+#enable flakes
+experimental-features = nix-command flakes
+
+
+
 
 
 
 #enable flatpak support 
 services.flatpak.enable = true;
 xdg.portal.extraPortals = [ pkgs.xdg-desktop-portal-gtk ];
-
-
 
 
 
@@ -181,7 +184,7 @@ environment.gnome.excludePackages = with pkgs; [
 
   # Enable the GNOME Desktop Environment.
   services.displayManager.ly.enable = true;
-  services.xserver.desktopManager.gnome.enable = true;
+  services.desktopManager.gnome.enable = true;
 
   # Configure keymap in X11
   services.xserver.xkb = {
@@ -222,7 +225,8 @@ environment.gnome.excludePackages = with pkgs; [
   };
 
   # Install firefox.
-  programs.firefox.enable = true;
+  #programs.firefox.enable = true;
+  
 
   # Allow unfree packages
   nixpkgs.config.allowUnfree = true;
@@ -245,8 +249,14 @@ environment.gnome.excludePackages = with pkgs; [
 	onlyoffice-desktopeditors
 	discord
 	htop
-(pkgs.callPackage (fetchTarball "https://github.com/nabilksabu/vantage-nix/archive/main.tar.gz") {})
+	librewolf
+	neovim
+	clang
+	gcc
+	caelestia-shell.packages.${system}.caelestia-shell
+	(pkgs.callPackage (fetchTarball "https://github.com/nabilksabu/vantage-nix/archive/main.tar.gz") {})
   ];
+
 
 
   # Some programs need SUID wrappers, can be configured further or are
