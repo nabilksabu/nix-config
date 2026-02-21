@@ -13,12 +13,6 @@
     ];
 
 
-#enable flakes
-experimental-features = nix-command flakes
-
-
-
-
 
 
 #enable flatpak support 
@@ -252,9 +246,8 @@ environment.gnome.excludePackages = with pkgs; [
 	librewolf
 	neovim
 	clang
-	gcc
-	caelestia-shell.packages.${system}.caelestia-shell
 	(pkgs.callPackage (fetchTarball "https://github.com/nabilksabu/vantage-nix/archive/main.tar.gz") {})
+	gcc
   ];
 
 
